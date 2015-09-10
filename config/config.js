@@ -23,7 +23,7 @@ if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
   db = home;
   port = process.env.INSIGHT_PORT || '3000';
-  b_port = '9402';
+  b_port = '21070';
   p2p_port = '9401';
 }
 else {
@@ -72,7 +72,7 @@ var bitcoindConf = {
   port:     process.env.MONACOIND_PORT || b_port,
   p2pPort:  process.env.MONACOIND_P2P_PORT || p2p_port,
   p2pHost:  process.env.MONACOIND_P2P_HOST || process.env.MONACOIND_HOST || '127.0.0.1',
-  dataDir: dataDir,
+  //dataDir: dataDir,
   // DO NOT CHANGE THIS!
   disableAgent: true
 };
